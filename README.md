@@ -17,3 +17,5 @@ Image magnification<br/>
       - BootstrapMagnify: https://github.com/marcaube/bootstrap-magnify<br/>
      <br/><br/>
 Secondary Image (on Mouseover) (Category list view and grid view)
+<br/><br/>
+Meta Tags for Images, Schema.org, and OpenGraph (eg. og:image for OpenGraph)

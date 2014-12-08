@@ -43,8 +43,7 @@
 			$sync1
 				.owlCarousel({
 					items: 1,
-					margin: 10,
-					autoWidth:true,
+					margin: 20,
 					lazyLoad: true,
 					nav: true,
 					dots: true
@@ -63,7 +62,6 @@
 					items: 6,
 					nav: true,
 					lazyLoad: true,
-					center: true,
 					dots: true
 				})
 				.on('click', '.owl-item', function () {

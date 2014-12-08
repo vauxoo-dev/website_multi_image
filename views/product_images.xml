@@ -12,7 +12,7 @@
 				<field name="name"/>
 				<field name="description"/>
 				<field name="image_alt"/>
-				<field name="image"/>
+				<field widget='image' name="image"/>
 		        </tree>
 		   </field>
                    </page>
@@ -30,7 +30,7 @@
 			    <field name="name"/>
 			    <field name="description"/>
 			    <field name="image_alt"/>
-			    <field name="image"/>
+			    <field widget='image' name="image"/>
 			    <templates>
 				<t t-name="kanban-box">
 				    <div style="position: relative">

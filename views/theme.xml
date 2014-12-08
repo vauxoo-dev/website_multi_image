@@ -32,28 +32,6 @@
             <script type="text/javascript">
                     $('.magnify-container img').magnify();
             </script>
-            <!-- <script type="text/javascript">
-            $(document).ready(function() {
-              var owl = $('.owl-carousel');
-              owl.owlCarousel({
-                margin: 10,
-                nav: true,
-                lazyLoad: true,
-                loop: true,
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  600: {
-                    items: 1
-                  },
-                  1000: {
-                    items: 1
-                  }
-                }
-              })
-            })
-            </script> -->
             <script type="text/javascript">
 		jQuery(document).ready(function ($) {
 
@@ -66,6 +44,8 @@
 				.owlCarousel({
 					items: 1,
 					margin: 10,
+					autoWidth:true,
+					lazyLoad: true,
 					nav: true,
 					dots: true
 				})
@@ -82,6 +62,7 @@
 					margin: 20,
 					items: 6,
 					nav: true,
+					lazyLoad: true,
 					center: true,
 					dots: true
 				})

@@ -8,9 +8,10 @@
                 	<span t-field="i.image" class="item" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt&quot;: &quot;i.image_alt&quot;, &quot;t-att-data-src&quot;: &quot;widget.src&quot;}"/>
                 	</t>
             </div>
+            <br/>
             <div class="owl-carousel thumbs">
                 	<t t-foreach="product.images" t-as="i">
-                	<span t-field="i.image" class="item top-buffer" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt&quot;: &quot;i.image_alt&quot;}"/>
+                	<span t-field="i.image" class="item" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt&quot;: &quot;i.image_alt&quot;}"/>
                 	</t>
             </div>
           </xpath>

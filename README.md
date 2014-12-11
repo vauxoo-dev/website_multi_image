@@ -16,7 +16,7 @@ This will provide you with the latest working 'stable' version of the module bui
 
 TODO: master
 ===================
-Image magnification<br/>
+Image magnification<br/> 
     + Options <br/>
       - Magnifier.js: https://github.com/mark-rolich/Magnifier.js<br/>
       - Zoom (jQuery): https://github.com/jackmoore/zoom/tree/master<br/>

@@ -15,11 +15,6 @@ This will provide you with the latest working 'stable' version of the module bui
 
 TODO: master
 ===================
-Add multiple image slideshow to over-ride current single image display on product view and category view pages.<br/>
-    + Options:<br/>
-      - WowSlider: https://github.com/WOWSlider/WOWSlider<br/>
-      - OwlCarousel: https://github.com/OwlFonk/OwlCarousel2<br/>
-      <br/><br/>
 Image magnification<br/>
     + Options <br/>
       - Magnifier.js: https://github.com/mark-rolich/Magnifier.js<br/>

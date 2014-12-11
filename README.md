@@ -1,6 +1,7 @@
 website_multi_image
 ===================
-This module adds multiple product images into a tab in product.template in a tab called Product Images. It is definitely a work in progress, however it does allow for storage of multiple images per product and can be used to display multiple images on your website template's product page.
+Website Multi Image stores multiple product images in a tab: 'Product Images' under Sales >> Product. These images are displayed on the product view page in a synced carousel (two carousels one large and one small) using OwlCarousel2.
+
 Website Multi-Image
 
 <H4>Please use the 8.0 branch:</H4> 

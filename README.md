@@ -22,5 +22,8 @@ Image magnification<br/>
       - Zoom (jQuery): https://github.com/jackmoore/zoom/tree/master<br/>
       - BootstrapMagnify: https://github.com/marcaube/bootstrap-magnify<br/>
      <br/><br/>
-Secondary Image (on Mouseover) (Category list view and grid view)<br/><br/>
-Image thumbnail preview widget in list view (to replace current download link)
+Secondary Image (on Mouseover) (Category list view and grid view)<br/>
+Image thumbnail preview widget in admin list view (to replace current download link)<br/>
+Attach Images to product variants to allow for image galleries based on product variants. This will be designed to switch galleries based on product variant attributes (eg. colour, size, etc.).<br/>
+Add product variant swatch thumbnails in a similar manner to Magento 1.9.1 (eg. t-if from tags or labels).<br/>
+Add support for WebRotate360 module website_webrotate360 (*not yet built).

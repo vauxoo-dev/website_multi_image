@@ -16,14 +16,14 @@ This will provide you with the latest working 'stable' version of the module bui
 
 TODO: master
 ===================
-Image magnification<br/> 
-    + Options <br/>
-      - Magnifier.js: https://github.com/mark-rolich/Magnifier.js<br/>
-      - Zoom (jQuery): https://github.com/jackmoore/zoom/tree/master<br/>
-      - BootstrapMagnify: https://github.com/marcaube/bootstrap-magnify<br/>
-     <br/><br/>
-Secondary Image (on Mouseover) (Category list view and grid view)<br/>
-Image thumbnail preview widget in admin list view (to replace current download link)<br/>
-Attach Images to product variants to allow for image galleries based on product variants. This will be designed to switch galleries based on product variant attributes (eg. colour, size, etc.).<br/>
-Add product variant swatch thumbnails in a similar manner to Magento 1.9.1 (eg. t-if from tags or labels).<br/>
-Add support for WebRotate360 module website_webrotate360 (*not yet built).
+* Image magnification
+  * Options
+    * Magnifier.js: https://github.com/mark-rolich/Magnifier.js
+    * Zoom (jQuery): https://github.com/jackmoore/zoom/tree/master
+    * BootstrapMagnify: https://github.com/marcaube/bootstrap-magnify
+
+* Secondary Image (on Mouseover) (Category list view and grid view)
+* Image thumbnail preview widget in admin list view (to replace current download link)
+* Attach Images to product variants to allow for image galleries based on product variants. This will be designed to switch galleries based on product variant attributes (eg. colour, size, etc.).
+* Add product variant swatch thumbnails in a similar manner to Magento 1.9.1 (eg. t-if from tags or labels).
+* Add support for WebRotate360 module website_webrotate360 (*not yet built).

@@ -15,13 +15,11 @@
     		slidesToScroll: 1,
 		 arrows: false,
     		fade: true,
-    		respondTo: min,
     		asNavFor: '.slider-nav'
 		});
 		$('.slider-nav').slick({
 		 slidesToShow: 3,
     		slidesToScroll: 1,
-    		respondTo: min,
     		asNavFor: '.slider-for',
     		centerMode: true,
     		focusOnSelect: true,

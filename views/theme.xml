@@ -16,15 +16,6 @@
 		 arrows: false,
     		fade: true,
     		asNavFor: '.slider-nav'
-    		responsive: [
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  ]
 		});
 		$('.slider-nav').slick({
 		 slidesToShow: 3,
@@ -32,15 +23,6 @@
     		asNavFor: '.slider-for',
     		centerMode: true,
     		focusOnSelect: true,
-    		responsive: [
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 0,
-		        slidesToScroll: 0
-		      }
-		    }
-		  ]
 		});
 	    </script>
           </xpath>

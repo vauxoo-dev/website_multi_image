@@ -27,3 +27,4 @@ TODO: master
 * Attach Images to product variants to allow for image galleries based on product variants. This will be designed to switch galleries based on product variant attributes (eg. colour, size, etc.).
 * Add product variant swatch thumbnails in a similar manner to Magento 1.9.1 (eg. t-if from tags or labels).
 * Add support for WebRotate360 module website_webrotate360 (*not yet built).
+* Add support for importing multiple images from URL or local path as default to allow for a more user-friendly mass update/import of product images in a similar manner to the Magmi project for Magento

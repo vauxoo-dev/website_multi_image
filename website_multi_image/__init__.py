@@ -1,1 +1,1 @@
-import product_images
+from . import product_images

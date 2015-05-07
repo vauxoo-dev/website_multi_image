@@ -6,3 +6,5 @@ a tab in product.template in a tab called
 Product Images, and allows an over-ride
 of product.image to allow for a multi-image
 carousel for the product view page.
+
+web_tree_image is recommended to install to get images preview: https://github.com/OCA/web/tree/8.0/web_tree_image

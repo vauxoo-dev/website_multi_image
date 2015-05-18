@@ -3,9 +3,11 @@ from openerp import models, fields, api
 
 class product_image(models.Model):
     _name = 'product.image'
+    _order = 'sequence, id DESC'
 
     name = fields.Char('Name')
     description = fields.Text('Description')
+    sequence = fields.Integer('Sequence')
     image_alt = fields.Text('Image Label')
     image = fields.Binary('Image')
     image_small = fields.Binary('Small Image')

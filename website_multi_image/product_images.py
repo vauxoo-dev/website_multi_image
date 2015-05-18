@@ -1,37 +1,26 @@
-from openerp.osv import osv, fields
+from openerp import models, fields, api
 
 
-class product_image(osv.Model):
+class product_image(models.Model):
     _name = 'product.image'
 
-    _columns = {
-        'name': fields.char('Name'),
-        'description': fields.text('Description'),
-        'image_alt': fields.text('Image Label'),
-        'image': fields.binary('Image'),
-        'image_small': fields.binary('Small Image'),
-        'product_tmpl_id': fields.many2one('product.template', 'Product'),
-    }
-product_image()
+    name = fields.Char('Name')
+    description = fields.Text('Description')
+    image_alt = fields.Text('Image Label')
+    image = fields.Binary('Image')
+    image_small = fields.Binary('Small Image')
+    product_tmpl_id = fields.Many2one('product.template', 'Product')
 
 
-class product_product(osv.Model):
+class product_product(models.Model):
     _inherit = 'product.product'
 
-    _columns = {
-        'images': fields.related('product_tmpl_id', 'images',
-                                 type="one2many",
-                                 relation="product.image",
-                                 string='Images', store=False),
-    }
-product_product()
+    images = fields.One2many('product.image', related='product_tmpl_id.images',
+                             string='Images', store=False)
 
 
-class product_template(osv.Model):
+class product_template(models.Model):
     _inherit = 'product.template'
 
-    _columns = {
-        'images': fields.one2many('product.image', 'product_tmpl_id',
-                                  string='Images'),
-    }
-product_template()
+    images = fields.One2many('product.image', 'product_tmpl_id',
+                             string='Images')

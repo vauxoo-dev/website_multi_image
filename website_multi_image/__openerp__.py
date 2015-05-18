@@ -8,6 +8,7 @@
         'views/product_images.xml',
         'views/website_product_image_carousel.xml',
         'views/theme.xml',
+        'views/res_config.xml',
         'security/ir.model.access.csv',
     ],
     'application': True,

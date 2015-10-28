@@ -18,7 +18,7 @@ python:
   - "2.7"
 env:
   global:
-  - LINT_CHECK=0 TESTS="0" VERSION="8.0" ODOO_REPO="vauxoo/odoo"
+  - PHANTOMJS_TESTS="0" LINT_CHECK=0 TESTS="0" VERSION="8.0" ODOO_REPO="vauxoo/odoo"
 
   matrix:
   - TESTS="1"

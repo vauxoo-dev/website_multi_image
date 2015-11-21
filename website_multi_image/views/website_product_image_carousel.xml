@@ -9,10 +9,10 @@
                 	<t t-foreach="product.images" t-as="i">
                 	   <div>
                         <t t-if="i.type=='binary'">
-                            <span t-field="i.datas" class="img-responsive" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img-responsive&quot;}"/>
+                            <span t-field="i.datas" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
                         </t>
                         <t t-if="i.type=='url'">
-                            <img t-attf-src="#{str(i.url)}" class="img-responsive" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img-responsive&quot;}"/>
+                            <img t-attf-src="#{str(i.url)}" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
                         </t>
                         </div>
                 	</t>
@@ -23,10 +23,10 @@
                 	<t t-foreach="product.images" t-as="i">
                     	<div>
                         <t t-if="i.type=='binary'">
-                            <span t-field="i.datas" class="img-responsive" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img-responsive&quot;}"/>
+                            <span t-field="i.datas" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
                         </t>
                         <t t-if="i.type=='url'">
-                            <img t-attf-src="#{str(i.url)}" class="img-responsive" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img-responsive&quot;}"/>
+                            <img t-attf-src="#{str(i.url)}" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
                         </t>
                         </div>
                 	</t>

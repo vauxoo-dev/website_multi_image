@@ -45,5 +45,17 @@
             </div>
           </xpath>
         </template>
+        <!-- TEMPLATE USED TO SHOW IMAGES FROM ir.attachment OBJECT IF THERE IS NO PICTURE IN THE BINARY FIELD OF THE PRODUCT -->
+        <template id="website_multi_image_product_list" inherit_id="website_sale.products_item" name="Website Product Multi-Image List">
+            <xpath expr="//img" position="replace">
+                <t t-if="product.image">
+                    <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product, 'image', None if product_image_big else '300x300')" t-att-alt="product.name"/>
+                </t>
+                <t t-if="not product.image and len(product.images)>0">
+                    <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product.images[0], 'datas', None if product_image_big else '300x300')" t-att-alt="product.name"/>
+                </t>
+            </xpath>
+        </template>
+
     </data>
 </openerp>

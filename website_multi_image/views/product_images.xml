@@ -11,8 +11,7 @@
 		        <tree editable="bottom">
 				<field name="name"/>
 				<field name="description"/>
-				<field name="image_alt"/>
-				<field name="image"/>
+				<field name="datas" widget="image" height="64"/>
 		        </tree>
 		   </field>
                    </page>
@@ -23,14 +22,13 @@
             <field name="model">product.product</field>
             <field name="inherit_id" ref="product.product_normal_form_view"/>
             <field name="arch" type="xml">
-                   <xpath expr="//page[@string='Information']" position="after">
-                   <page string="Product Images">
-		   <field name="images" mode="kanban" context="{'default_name': name}">
-			<kanban>
-			    <field name="name"/>
+            <xpath expr="//page[@string='Information']" position="after">
+            <page string="Product Images">
+		      <field name="images" mode="kanban" context="{'default_name': name}">
+			     <kanban>
+			         <field name="name"/>
 			    <field name="description"/>
-			    <field name="image_alt"/>
-			    <field name="image"/>
+			    <field name="datas"/>
 			    <templates>
 				<t t-name="kanban-box">
 				    <div style="position: relative">

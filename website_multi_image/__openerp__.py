@@ -4,7 +4,12 @@
     'category': 'Website',
     'version': '1.0',
     'author': 'Luke Branch and Cristian Sebastian Rocha',
-    'depends': ['product', 'sale', 'website_sale'],
+    'depends': [
+        'product',
+        'sale',
+        'website_sale',
+        'web_tree_image',
+        ],
     'data': [
         'views/product_images.xml',
         'views/website_product_image_carousel.xml',

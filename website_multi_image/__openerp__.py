@@ -8,7 +8,6 @@
         'product',
         'sale',
         'website_sale',
-        'web_tree_image',
         ],
     'data': [
         'views/product_images.xml',

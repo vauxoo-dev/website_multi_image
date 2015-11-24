@@ -4,9 +4,9 @@ from openerp import models, fields
 
 class IrAttachment(models.Model):
     _inherit = 'ir.attachment'
-    _order = 'sequence'
+    _order = 'name asc'
 
-    image_id = fields.Many2one('product.template', string='Images')
+    product_tmpl_id = fields.Many2one('product.template', string='Images')
     sequence = fields.Integer(
         'Sequence',
         help="Dragging and dropping an image at te beggining of the list of"
@@ -17,5 +17,5 @@ class IrAttachment(models.Model):
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
-    images = fields.One2many('ir.attachment', 'image_id',
+    images = fields.One2many('ir.attachment', 'product_tmpl_id',
                              string='Images')

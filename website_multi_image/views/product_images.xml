@@ -7,10 +7,12 @@
             <field name="arch" type="xml">
                    <xpath expr="//page[@string='Information']" position="after">
                    <page string="Product Images">
-        		   <field name="images" context="{'default_name': name}">
+        		   <field name="images" context="{'default_name': name, 'default_res_id': id, 'default_res_model': 'product.template'}">
         		        <tree editable="bottom">
             				<field name="sequence" widget="handle"/>
                             <field name="name"/>
+                            <field name="res_model" attrs="{'readonly':False}" invisible="1"/>
+                            <field name="res_id" attrs="{'readonly':False}" invisible="1"/>
             				<field name="description"/>
             				<field name="datas" widget="image" height="64"/>
         		        </tree>

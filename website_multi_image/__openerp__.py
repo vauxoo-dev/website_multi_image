@@ -15,5 +15,8 @@
         'views/theme.xml',
         'security/ir.model.access.csv',
     ],
+    'demo': [
+        'demo/demo_images.xml',
+    ],
     'application': True,
 }

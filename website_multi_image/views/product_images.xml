@@ -7,13 +7,14 @@
             <field name="arch" type="xml">
                    <xpath expr="//page[@string='Information']" position="after">
                    <page string="Product Images">
-		   <field name="images" context="{'default_name': name}">
-		        <tree editable="bottom">
-				<field name="name"/>
-				<field name="description"/>
-				<field name="datas" widget="image" height="64"/>
-		        </tree>
-		   </field>
+        		   <field name="images" context="{'default_name': name}">
+        		        <tree editable="bottom">
+            				<field name="sequence" widget="handle"/>
+                            <field name="name"/>
+            				<field name="description"/>
+            				<field name="datas" widget="image" height="64"/>
+        		        </tree>
+        		   </field>
                    </page>
                    </xpath>
             </field>

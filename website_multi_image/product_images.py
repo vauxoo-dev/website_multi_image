@@ -4,8 +4,10 @@ from openerp import models, fields, api
 
 class IrAttachment(models.Model):
     _inherit = 'ir.attachment'
+    _order = 'sequence'
 
     image_id = fields.Many2one('product.template', string='Images')
+    sequence = fields.Integer('Sequence')
 
 
 class ProductTemplate(models.Model):

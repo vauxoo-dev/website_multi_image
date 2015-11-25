@@ -6,34 +6,56 @@
             <div class="container-fluid">
             <div class="row-fluid">
                 <div class="slider slider-for">
+                    <t t-if="product.image">
+                        <div>
+                            <span t-field="product.image" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
+                        </div>
+                    </t>
                 	<t t-foreach="product.images" t-as="i">
-                	   <div>
-                        <t t-if="i.type=='binary'">
-                            <span t-field="i.datas" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
-                        </t>
-                        <t t-if="i.type=='url'">
-                            <img t-attf-src="#{str(i.url)}" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
-                        </t>
+                        <div>
+                            <t t-if="i.type=='binary'">
+                                <span t-field="i.datas" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
+                            </t>
+                            <t t-if="i.type=='url'">
+                                <img t-attf-src="#{str(i.url)}" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
+                            </t>
                         </div>
                 	</t>
                 </div>
             </div>
-            <div class="row-fluid" t-if="len(product.images)>1">
+            <div class="row-fluid" t-if="len(product.images)>=1">
                 <div class="slider slider-nav">
+                    <t t-if="product.image">
+                        <div>
+                            <span t-field="product.image" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
+                        </div>
+                    </t>
                 	<t t-foreach="product.images" t-as="i">
-                    	<div>
-                        <t t-if="i.type=='binary'">
-                            <span t-field="i.datas" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
-                        </t>
-                        <t t-if="i.type=='url'">
-                            <img t-attf-src="#{str(i.url)}" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
-                        </t>
+                        <div>
+                            <t t-if="i.type=='binary'">
+                                <span t-field="i.datas" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
+                            </t>
+                            <t t-if="i.type=='url'">
+                                <img t-attf-src="#{str(i.url)}" class="img-responsive" t-field-options='{"widget": "image", "class": "img" }'/>
+                            </t>
                         </div>
                 	</t>
+                  </div>
                 </div>
-            </div>
             </div>
           </xpath>
         </template>
+        <!-- TEMPLATE USED TO SHOW IMAGES FROM ir.attachment OBJECT IF THERE IS NO PICTURE IN THE BINARY FIELD OF THE PRODUCT -->
+        <template id="website_multi_image_product_list" inherit_id="website_sale.products_item" name="Website Product Multi-Image List">
+            <xpath expr="//img" position="replace">
+                <t t-if="product.image">
+                    <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product, 'image', None if product_image_big else '300x300')" t-att-alt="product.name"/>
+                </t>
+                <t t-if="not product.image and len(product.images)>0">
+                    <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product.images[0], 'datas', None if product_image_big else '300x300')" t-att-alt="product.name"/>
+                </t>
+            </xpath>
+        </template>
+
     </data>
 </openerp>

@@ -2,7 +2,7 @@
 {
     'name': 'Product Multi-Image',
     'category': 'Website',
-    'version': '1.0',
+    'version': '10.0.0.1.0',
     'author': 'Luke Branch, Cristian Sebastian Rocha and Vauxoo',
     'license': 'AGPL-3',
     'depends': [

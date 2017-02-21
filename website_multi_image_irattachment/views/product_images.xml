@@ -5,7 +5,7 @@
             <field name="model">product.template</field>
             <field name="inherit_id" ref="product.product_template_only_form_view"/>
             <field name="arch" type="xml">
-                   <xpath expr="//page[@string='Information']" position="after">
+                   <xpath expr="//page[1]" position="after">
                    <page string="Product Images">
         		   <field name="images" context="{'default_name': name, 'default_res_id': id, 'default_res_model': 'product.template'}">
         		        <tree editable="bottom">
@@ -25,7 +25,7 @@
             <field name="model">product.product</field>
             <field name="inherit_id" ref="product.product_normal_form_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//page[@string='Information']" position="after">
+                <xpath expr="//page[1]" position="after">
                     <page string="Product Images">
 		              <field name="images" context="{'default_name': name, 'default_res_id': id, 'default_res_model': 'product.product'}">
                         <tree editable="bottom">
